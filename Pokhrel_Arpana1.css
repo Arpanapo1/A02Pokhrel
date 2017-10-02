@@ -1,0 +1,41 @@
+
+body {
+    background-color: #ccffff;
+	text-align: center;
+}
+
+h1:hover{
+	border-style: dashed;
+	border-radius: 25px;
+	margin-left: 15%;
+	width: 70%;
+	margin-bottom:20px;
+}
+
+#name {
+    text-decoration: underline;
+	font-weight: bold;
+}
+
+h2.italicFont {
+	font-style: italic;
+}
+
+section.roundborder {
+	border-style: solid;
+	border-radius: 25px;
+	margin-left: 15%;
+	width: 70%;
+	margin-bottom:20px;
+}
+
+article.roundborder {
+	border-style: solid;
+	border-radius: 25px;
+	margin-left: 15%;
+	width: 70%;
+}
+
+h3.hover:hover {
+	font-size: 25px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function luckyname() {
+            console.log('luckyname has been called');
+            var firstname1=document.getElementById('firstname').value;
+            console.log(firstname1);
+            var lastname1=document.getElementById('lastname').value;
+            var fullname = firstname1.concat(lastname1);
+            var result=document.getElementById('here');
+            var length=fullname.length;
+            console.log(length);
+            $("#here1").html("<b>By: Arpana Pokhrel</b>");
+            result.innerHTML=fullname.charAt(Math.floor((Math.random() * length + 1)));
+
+           
+        }
+    </script>
+</head>
+
+<body background="background.jpg">
+
+    <ul>
+        
+        <li><a href="home.html">Arpana Pokhrel</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="puzzle.html">Puzzle</a></li>
+    </ul>
+
+    <div class="container">
+
+    </div>
+
+
+    <div class="container">
+        <!-- <div class="row">
+                <a target="_blank" href="https://github.com">
+                  <img src="Octocat.jpg" alt="Github" style="width:70px;height:70px;border:0;">
+                </a>
+                <a target="_blank" href="https://github.com">
+                  <img src="Octocat.jpg" alt="Github" style="width:70px;height:70px;border:0;">
+                </a>
+            </div>     -->
+        <h2> <b id="fortable"> Find your Lucky Alphabet:</b></h2>
+        <!-- This puzzle is from one of my solved KATTAS at codewars.com  -->
+
+
+        <p> Have you ever wondered that even you do have a lucky Alphabet which comes from your own name??</p>
+        <p>Probably its going to be surprising to change your fortune once u start loving the alphabet</p>
+        <p>You may turn your major signature into your lucky alphabet and change your fortune.</p>
+        <p> All you need to do is just enter your first and last name and hit the click me buton below</p>
+        <form id="formybodies">
+            FirstName:<br>
+            <input type="text" name="FirstName" value="" id="firstname">
+            <br> LastName:
+            <br>
+            <input type="text" name="LastName" value="" id="lastname">
+            <br><br>
+            <input type="button" id="myid" onclick="luckyname()" value="Click me to find your lucky alphabet"/>
+            <br><br>
+            <p>Your Lucky Alphabet is: <b id="here" fontSize = "xx-large"></b></p>
+            <p id="here1"> </p>
+            
+        </form>
+
+    </div>
+
+    <footer align="center">
+        <h4>Thank you!</h4>
+        <h3 class='hover'>Arpana Pokhrel</h3>
+    </footer>
+
+
+    <!-- <script type="text/javascript" src="filename.js" ></script> -->
+
+</body>
+
+</html>
